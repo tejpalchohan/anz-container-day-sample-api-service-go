@@ -14,7 +14,7 @@ func main() {
 
 		f := fib()
 
-		res := &response{Message: "Hello World"}
+		res := &response{Message: "EKS Lab Test"}
 
 		for _, e := range os.Environ() {
 			pair := strings.Split(e, "=")
@@ -33,7 +33,7 @@ func main() {
 
 		io.WriteString(w, string(out))
 
-		fmt.Println("EK Lab Test - the log message")
+		fmt.Println("EKS Lab Test - the log message")
 	})
 	http.ListenAndServe(":8080", nil)
 }
